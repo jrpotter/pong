@@ -1,0 +1,39 @@
+Vivado Simulator 2014.4
+Copyright 1986-1999, 2001-2014 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2014.4/bin/unwrapped/win64.o/xelab.exe -wto 5f5d7ddd32cb4c0cb289603e426c9fed --debug typical --relax -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot project_screentest_behav xil_defaultlib.project_screentest xil_defaultlib.glbl -log elaborate.log 
+Multi-threading is on. Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 1 for port invert [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/top.v:67]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 5 for port WriteAddr [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/datapath.sv:88]
+WARNING: [VRFC 10-278] actual bit length 32 differs from formal bit length 4 for port writedata [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv:86]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.imem
+Compiling module xil_defaultlib.debouncer
+Compiling module xil_defaultlib.controller
+Compiling module xil_defaultlib.register_file(Abits=5,Dbits=32,N...
+Compiling module xil_defaultlib.signExtension
+Compiling module xil_defaultlib.fulladder
+Compiling module xil_defaultlib.adder(N=32)
+Compiling module xil_defaultlib.addsub(N=32)
+Compiling module xil_defaultlib.shifter(N=32)
+Compiling module xil_defaultlib.logical(N=32)
+Compiling module xil_defaultlib.comparator(N=32)
+Compiling module xil_defaultlib.ALU(N=32)
+Compiling module xil_defaultlib.datapath
+Compiling module xil_defaultlib.mips
+Compiling module xil_defaultlib.smem
+Compiling module xil_defaultlib.dmem
+Compiling module xil_defaultlib.memIO
+Compiling module xil_defaultlib.xycounter(width=800,height=525)
+Compiling module xil_defaultlib.vgatimer
+Compiling module xil_defaultlib.bitmapmem
+Compiling module xil_defaultlib.vgadisplaydriver
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.selfcheck
+Compiling module xil_defaultlib.project_screentest
+Compiling module xil_defaultlib.glbl
+Waiting for 2 sub-compilation(s) to finish...
+Built simulation snapshot project_screentest_behav

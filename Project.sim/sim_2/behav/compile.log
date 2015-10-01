@@ -1,0 +1,57 @@
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/fulladder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fulladder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/comparator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module comparator
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/addsub.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module addsub
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/logical.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module logical
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/shifter.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shifter
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/signExtension.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signExtension
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/xycounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xycounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/register_file.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgatimer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vgatimer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/smem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module smem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/controller.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/bitmapmem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bitmapmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/dmem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module dmem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/datapath.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module datapath
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/debouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgadisplaydriver.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module vgadisplaydriver
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/imem.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module imem
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module memIO
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/mips.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module project_screentest
+WARNING: [VRFC 10-756] identifier ERROR_pc is used before its declaration [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv:167]
+WARNING: [VRFC 10-756] identifier ERROR_mem_writedata is used before its declaration [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv:168]
+WARNING: [VRFC 10-756] identifier ERROR_ReadData1 is used before its declaration [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv:169]
+WARNING: [VRFC 10-756] identifier ERROR_reg_writedata is used before its declaration [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv:170]
+WARNING: [VRFC 10-756] identifier ERROR_pcsel is used before its declaration [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv:171]
+WARNING: [VRFC 10-756] identifier ERROR_smem_addr is used before its declaration [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv:172]
+WARNING: [VRFC 10-756] identifier ERROR_red is used before its declaration [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_2/new/Project_screentest_nopause.sv:173]
+INFO: [VRFC 10-311] analyzing module selfcheck
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/jrpotter/Documents/Vivado/Project/Project.sim/sim_2/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

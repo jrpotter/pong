@@ -1,0 +1,671 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -mode batch -messageDb vivado.pb -source top.tcl
+
+
+****** Vivado v2014.4 (64-bit)
+  **** SW Build 1071353 on Tue Nov 18 18:24:04 MST 2014
+  **** IP Build 1070531 on Tue Nov 18 01:10:18 MST 2014
+    ** Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl
+# set_param gui.test TreeTableDev
+# set_param xicom.use_bs_reader 1
+# debug::add_scope template.lib 1
+# set_msg_config -id {HDL 9-1061} -limit 100000
+# set_msg_config -id {HDL 9-1654} -limit 100000
+# create_project -in_memory -part xc7a100tcsg324-1
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/kintex7/kc705/1.1/board_part.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:0.9 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/0.9/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.0 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.0/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zc706:part0:1.1 available at C:/Xilinx/Vivado/2014.4/data/boards/board_parts/zynq/zc706/1.1/board_part.xml as part xc7z045ffg900-2 specified in board_part file is either invalid or not available
+# set_param project.compositeFile.enableAutoGeneration 0
+# set_param synth.vivado.isSynthRun true
+# set_property webtalk.parent_dir C:/Users/jrpotter/Documents/Vivado/Project/Project.cache/wt [current_project]
+# set_property parent.project_path C:/Users/jrpotter/Documents/Vivado/Project/Project.xpr [current_project]
+# set_property default_lib xil_defaultlib [current_project]
+# set_property target_language Verilog [current_project]
+# read_verilog -library xil_defaultlib -sv {
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/hexto7seg.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/xycounter.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/signExtension.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/initfile.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/register_file.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/display8digit.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/display640x480.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgatimer.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memory.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/smem.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/dmem.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/datapath.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/controller.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/bitmapmem.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/keyboard.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgadisplaydriver.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/mips.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/imem.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/debouncer.sv
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/clockdiv.sv
+# }
+# read_verilog -library xil_defaultlib {
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/fulladder.v
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/adder.v
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/shifter.v
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/logical.v
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/comparator.v
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/addsub.v
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/alu.v
+#   C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/top.v
+# }
+# read_xdc C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/constrs_1/imports/src/master.xdc
+# set_property used_in_implementation false [get_files C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/constrs_1/imports/src/master.xdc]
+# catch { write_hwdef -file top.hwdef }
+INFO: [Vivado_Tcl 4-279] hardware handoff file cannot be generated as there is no block diagram instance in the design
+# synth_design -top top -part xc7a100tcsg324-1
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 232.199 ; gain = 74.242
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/top.v:20]
+INFO: [Synth 8-638] synthesizing module 'clockdivider_Nexys4' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/clockdiv.sv:10]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:16110]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT3_DIVIDE bound to: 80 - type: integer 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (1#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:16110]
+WARNING: [Synth 8-350] instance 'mmcm' of module 'MMCME2_BASE' requires 18 connections, but only 10 given [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/clockdiv.sv:14]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:606]
+INFO: [Synth 8-638] synthesizing module 'INV' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:12850]
+INFO: [Synth 8-256] done synthesizing module 'INV' (3#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:12850]
+INFO: [Synth 8-638] synthesizing module 'BUFGMUX' [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:695]
+	Parameter CLK_SEL_TYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'BUFGMUX' (4#1) [C:/Xilinx/Vivado/2014.4/scripts/rt/data/unisim_comp.v:695]
+INFO: [Synth 8-256] done synthesizing module 'clockdivider_Nexys4' (5#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/clockdiv.sv:10]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/imem.sv:16]
+INFO: [Synth 8-3876] $readmem data file 'imem_init.txt' is read successfully [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/imem.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'imem' (6#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/imem.sv:16]
+INFO: [Synth 8-638] synthesizing module 'debouncer' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/debouncer.sv:14]
+	Parameter N bound to: 20 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debouncer' (7#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/debouncer.sv:14]
+INFO: [Synth 8-638] synthesizing module 'mips' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/mips.sv:9]
+INFO: [Synth 8-638] synthesizing module 'controller' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/controller.sv:37]
+INFO: [Synth 8-256] done synthesizing module 'controller' (8#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/controller.sv:37]
+INFO: [Synth 8-638] synthesizing module 'datapath' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/datapath.sv:23]
+	Parameter Abits bound to: 5 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/register_file.sv:11]
+	Parameter Abits bound to: 5 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter Nloc bound to: 32 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'regd_init.txt' is read successfully [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/register_file.sv:24]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (9#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/register_file.sv:11]
+WARNING: [Synth 8-689] width (32) of port connection 'WriteAddr' does not match port width (5) of module 'register_file' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/datapath.sv:88]
+INFO: [Synth 8-638] synthesizing module 'signExtension' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/signExtension.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'signExtension' (10#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/signExtension.sv:23]
+INFO: [Synth 8-638] synthesizing module 'ALU' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/alu.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'addsub' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/addsub.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adder' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/adder.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fulladder' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/fulladder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (11#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/fulladder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'adder' (12#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/adder.v:23]
+INFO: [Synth 8-256] done synthesizing module 'addsub' (13#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/addsub.v:23]
+INFO: [Synth 8-638] synthesizing module 'shifter' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/shifter.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shifter' (14#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/shifter.v:23]
+INFO: [Synth 8-638] synthesizing module 'logical' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/logical.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logical' (15#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/logical.v:23]
+INFO: [Synth 8-638] synthesizing module 'comparator' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/comparator.v:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'comparator' (16#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/comparator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (17#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/alu.v:23]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (18#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/datapath.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'mips' (19#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/mips.sv:9]
+INFO: [Synth 8-638] synthesizing module 'memIO' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv:18]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/keyboard.sv:7]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (20#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/keyboard.sv:7]
+INFO: [Synth 8-638] synthesizing module 'display8digit' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/display8digit.sv:8]
+INFO: [Synth 8-638] synthesizing module 'hexto7seg' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/hexto7seg.sv:9]
+INFO: [Synth 8-226] default block is never used [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/hexto7seg.sv:15]
+INFO: [Synth 8-256] done synthesizing module 'hexto7seg' (21#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/hexto7seg.sv:9]
+INFO: [Synth 8-256] done synthesizing module 'display8digit' (22#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/display8digit.sv:8]
+WARNING: [Synth 8-689] width (24) of port connection 'val' does not match port width (32) of module 'display8digit' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv:91]
+INFO: [Synth 8-638] synthesizing module 'smem' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/smem.sv:25]
+INFO: [Synth 8-3876] $readmem data file 'smem_init.txt' is read successfully [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/smem.sv:37]
+INFO: [Synth 8-256] done synthesizing module 'smem' (23#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/smem.sv:25]
+WARNING: [Synth 8-689] width (32) of port connection 'writedata' does not match port width (8) of module 'smem' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv:102]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/dmem.sv:15]
+INFO: [Synth 8-3876] $readmem data file 'dmem_init.txt' is read successfully [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/dmem.sv:27]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (24#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/dmem.sv:15]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv:72]
+INFO: [Synth 8-256] done synthesizing module 'memIO' (25#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/memIO.sv:18]
+INFO: [Synth 8-638] synthesizing module 'vgadisplaydriver' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgadisplaydriver.sv:15]
+INFO: [Synth 8-638] synthesizing module 'vgatimer' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgatimer.sv:15]
+INFO: [Synth 8-638] synthesizing module 'xycounter' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/xycounter.sv:23]
+	Parameter width bound to: 800 - type: integer 
+	Parameter height bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xycounter' (26#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/xycounter.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'vgatimer' (27#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgatimer.sv:15]
+INFO: [Synth 8-638] synthesizing module 'bitmapmem' [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/bitmapmem.sv:16]
+INFO: [Synth 8-3876] $readmem data file 'bmem_init.txt' is read successfully [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/bitmapmem.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'bitmapmem' (28#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/bitmapmem.sv:16]
+INFO: [Synth 8-256] done synthesizing module 'vgadisplaydriver' (29#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/vgadisplaydriver.sv:15]
+INFO: [Synth 8-256] done synthesizing module 'top' (30#1) [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/top.v:20]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 265.379 ; gain = 107.422
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 265.379 ; gain = 107.422
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+Loading clock regions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/ClockBuffers.xml
+Loading clock placement rules from C:/Xilinx/Vivado/2014.4/data/parts/xilinx/artix7/ClockPlacerRules.xml
+Loading package pin functions from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/PinFunctions.xml...
+Loading package from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/artix7/xc7a100t/csg324/Package.xml
+Loading io standards from C:/Xilinx/Vivado/2014.4/data\./parts/xilinx/artix7/IOStandards.xml
+Loading device configuration modes from C:/Xilinx/Vivado/2014.4/data\parts/xilinx/artix7/ConfigModes.xml
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/constrs_1/imports/src/master.xdc]
+Finished Parsing XDC File [C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/constrs_1/imports/src/master.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 582.031 ; gain = 0.023
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+ROM "mem" won't be mapped to RAM because it is too sparse.
+ROM "count" won't be mapped to Block RAM because address size (2) smaller than threshold (5) 
+ROM "x" won't be mapped to RAM because it is too sparse.
+ROM "y0" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 67    
++---Registers : 
+	               32 Bit    Registers := 1     
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	 129 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 17    
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     24 Bit        Muxes := 2     
+	   5 Input     10 Bit        Muxes := 1     
+	   9 Input     10 Bit        Muxes := 1     
+	  16 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module top 
+Detailed RTL Component Info : 
+Module clockdivider_Nexys4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	 129 Input     32 Bit        Muxes := 1     
+Module debouncer 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   9 Input     10 Bit        Muxes := 1     
+	  12 Input      5 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module signExtension 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fulladder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module addsub 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module logical 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+Module comparator 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      5 Bit        Muxes := 3     
+Module mips 
+Detailed RTL Component Info : 
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               24 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module hexto7seg 
+Detailed RTL Component Info : 
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module display8digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module smem 
+Detailed RTL Component Info : 
+Module dmem 
+Detailed RTL Component Info : 
+Module memIO 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     24 Bit        Muxes := 1     
+Module xycounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module vgatimer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module bitmapmem 
+Detailed RTL Component Info : 
+Module vgadisplaydriver 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+ROM "timer/xy/x" won't be mapped to RAM because it is too sparse.
+ROM "timer/xy/y0" won't be mapped to RAM because it is too sparse.
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 582.031 ; gain = 424.074
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: 
++------------+-------------------+--------------------+----------------------+----------------------------------------------+-------------------+
+|Module Name | RTL Object        | Inference Criteria | Size (depth X width) | Primitives                                   | Hierarchical Name | 
++------------+-------------------+--------------------+----------------------+----------------------------------------------+-------------------+
+|top         | mips/dp/rf/rf_reg | Implied            | 32 X 32              | RAM32M x 12                                  | top/ram__6        | 
+|top         | io/smem/mem_reg   | Implied            | 2 K X 8              | RAM16X1D x 8  RAM32X1D x 8  RAM128X1D x 72   | top/ram__8        | 
+|top         | io/dmem/mem_reg   | Implied            | 32 X 32              | RAM32X1S x 32                                | top/ram__10       | 
++------------+-------------------+--------------------+----------------------+----------------------------------------------+-------------------+
+
+Note: The table shows RAMs generated at current stage. Some RAM generation could be reversed due to later optimizations. Multiple instantiated RAMs are reported only once. "Hierarchical Name" reflects the hierarchical modules names of the RAM and only part of it is displayed.
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[18] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[19] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[20] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[21] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[22] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[23] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[24] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[25] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[26] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[27] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[28] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[29] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[30] ) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (\io/disp/counter_reg[31] ) is unused and will be removed from module top.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 582.031 ; gain = 424.074
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:29 ; elapsed = 00:00:36 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 582.031 ; gain = 424.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 680.348 ; gain = 522.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 680.348 ; gain = 522.391
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:55 ; elapsed = 00:01:06 . Memory (MB): peak = 680.348 ; gain = 522.391
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:56 ; elapsed = 00:01:06 . Memory (MB): peak = 680.348 ; gain = 522.391
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |BUFGMUX     |     4|
+|3     |CARRY4      |    36|
+|4     |LUT1        |   104|
+|5     |LUT2        |    65|
+|6     |LUT3        |   124|
+|7     |LUT4        |   167|
+|8     |LUT5        |   199|
+|9     |LUT6        |   560|
+|10    |MMCME2_BASE |     1|
+|11    |MUXF7       |    27|
+|12    |RAM128X1D   |    72|
+|13    |RAM16X1D    |     8|
+|14    |RAM32M      |    12|
+|15    |RAM32X1D    |     8|
+|16    |RAM32X1S    |    32|
+|17    |FDRE        |   161|
+|18    |IBUF        |     4|
+|19    |OBUF        |    30|
++------+------------+------+
+
+Report Instance Areas: 
++------+----------------+--------------------+------+
+|      |Instance        |Module              |Cells |
++------+----------------+--------------------+------+
+|1     |top             |                    |  1615|
+|2     |  clkdv         |clockdivider_Nexys4 |    13|
+|3     |  displaydriver |vgadisplaydriver    |    99|
+|4     |    timer       |vgatimer            |    80|
+|5     |      xy        |xycounter           |    76|
+|6     |  io            |memIO               |   333|
+|7     |    disp        |display8digit       |    50|
+|8     |    dmem        |dmem                |    36|
+|9     |    kmem        |keyboard            |   143|
+|10    |    smem        |smem                |   104|
+|11    |  mips          |mips                |  1084|
+|12    |    dp          |datapath            |  1084|
+|13    |      rf        |register_file       |  1011|
+|14    |  rbouncer      |debouncer           |    52|
++------+----------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 680.348 ; gain = 522.391
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:55 . Memory (MB): peak = 680.348 ; gain = 186.336
+Synthesis Optimization Complete : Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 680.348 ; gain = 522.391
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 177 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 0 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 0 OBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 137 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 72 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 8 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:07 . Memory (MB): peak = 680.348 ; gain = 503.051
+# write_checkpoint -noxdef top.dcp
+# catch { report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb }
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.172 . Memory (MB): peak = 680.348 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 22 08:01:16 2015...
