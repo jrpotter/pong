@@ -1,5 +1,0 @@
-Vivado Simulator 2014.4
-Time resolution is 1 ps
-WARNING: File smem_init.txt referenced on C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/smem.sv at line 37 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-WARNING: File dmem_init.txt referenced on C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sources_1/imports/src/dmem.sv at line 27 cannot be opened for reading. Please ensure that this file is available in the current working directory.
-$finish called at time : 50 ns : File "C:/Users/jrpotter/Documents/Vivado/Project/Project.srcs/sim_1/imports/src/Lab10_test_sqr.sv" Line 88
